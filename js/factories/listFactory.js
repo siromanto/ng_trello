@@ -29,8 +29,8 @@ angular.module('app').factory('listFactory', function () {
     };
 
     service.removeList = function (list) {
-        _.pull(lists, list);
-    }
+        return _.pull(lists, list);
+    };
 
     return service;
 });
